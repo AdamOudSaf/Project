@@ -1,0 +1,57 @@
+body {
+    background-color: #00008b; /* Dark blue background */
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.hangman-container {
+    text-align: center;
+    max-width: 800px; /* Adjust width as needed */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing as needed */
+    align-items: flex-start; /* Aligns children at the top */
+}
+
+.attempts-container, .hangman-box {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    min-width: 200px; /* Set minimum width */
+}
+
+.hangman-box {
+    white-space: pre; /* This ensures that whitespace is preserved */
+    font-family: monospace; /* Monospace ensures even spacing for characters */
+    overflow-x: auto; /* Allows scrolling if content is too wide */
+}
+
+#user-input {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    color: #000;
+}
+
+button {
+    background-color: white;
+    color: #00008b;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #dddddd;
+}
