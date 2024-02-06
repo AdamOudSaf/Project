@@ -6,13 +6,13 @@ body, html {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background-color: #00008b; /* Dark blue background */
+    background-color: #00008b; 
     color: white;
 }
 
 .container {
     width: 100%;
-    max-width: 600px; /* Adjust as needed for your design */
+    max-width: 600px; 
     padding: 20px;
     box-sizing: border-box;
     display: flex;
@@ -30,7 +30,7 @@ body, html {
     cursor: pointer;
     font-size: 20px;
     margin: 10px;
-    width: 200px; /* Fixed width for buttons */
+    width: 200px;
 }
 
 .game-button:hover {
