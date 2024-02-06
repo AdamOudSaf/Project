@@ -4,7 +4,7 @@ let attempts = 6;
 let guessedLetters = [];
 let wrongLetters = [];
 const hangmanStages = [
-  '', // Initial empty state
+  '',
   '  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========\'\'\'', // First failed attempt
   '  +---+\n  |   |\n  O   |\n      |\n      |\n      |\n=========\'\'\'', // Second failed attempt
   '  +---+\n  |   |\n  O   |\n  |   |\n      |\n      |\n=========\'\'\'', // Third failed attempt
@@ -56,7 +56,7 @@ function guessLetter() {
         displayWord();
         updateWrongLetters();
     }
-    userInput.value = ''; // Clear the input field
+    userInput.value = ''; 
     checkGameOver();
 }
 
@@ -79,7 +79,7 @@ function checkGameOver() {
 displayWord();
 updateAttempts();
 updateWrongLetters();
-updateHangmanDrawing(); // Draw the initial hangman stage (which is empty)
+updateHangmanDrawing(); 
 
 // Reset the game for a new word
 function resetGame() {
@@ -94,4 +94,3 @@ function resetGame() {
     document.getElementById('user-input').disabled = false;
 }
 
-// Attach the resetGame function to a button in your HTML to allow new games
