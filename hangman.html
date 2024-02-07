@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hangman Game</title>
+<link rel="stylesheet" href="/hangman.css">
+</head>
+<body>
+    <div class="hangman-container">
+        <h1>Hangman</h1>
+        <div class="flex-container">
+            <div class="attempts-container">
+                <p id="attempts">You still have <span>6</span> attempts</p>
+                <p id="wrong-letters">Wrong letters you chose: </p>
+                <p id="word">_ _ _ _ _</p>
+            </div>
+            <pre id="hangman-drawing" class="hangman-box">
+            </pre>
+        </div>
+        <input type="text" id="user-input" placeholder="Type a letter here" maxlength="1">
+        <button onclick="guessLetter()">Guess</button>
+        <button onclick="resetGame()">Change word</button> 
+    </div>
+<script src="/hangman.js"></script>
+</body>
+</html>
