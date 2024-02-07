@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0000ff; /* Dark blue background */
+    background-color: #0000ff; 
     font-family: Arial, sans-serif;
     color: white;
 }
@@ -19,14 +19,14 @@ body {
 .player {
     margin: 0 20px;
     padding: 10px;
-    font-size: 2em; /* Larger font size for visibility */
+    font-size: 2em; 
     color: #fff;
-    background: transparent; /* Transparent background */
+    background: transparent; 
 }
 
 .board {
     display: grid;
-    grid-template-columns: repeat(3, 120px); /* Adjust size as necessary */
+    grid-template-columns: repeat(3, 120px); 
     grid-gap: 10px;
 }
 
@@ -34,25 +34,25 @@ body {
     width: 120px;
     height: 120px;
     background-color: #ffffff;
-    color: #0000ff; /* Blue Xs and Os */
+    color: #0000ff; 
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3em; /* Larger Xs and Os */
+    font-size: 3em; 
     cursor: pointer;
     border-radius: 10px;
 }
 
 .cell:hover {
-    background-color: #e6e6e6; /* Lighter cell background on hover */
+    background-color: #e6e6e6; 
 }
 
 .cell:active {
-    background-color: #cccccc; /* Even lighter cell background on active */
+    background-color: #cccccc; 
 }
 
 .cell.winner {
-    background-color: limegreen; /* Or any color you'd like */
+    background-color: limegreen; 
     color: white;
 }
 
