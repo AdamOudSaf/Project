@@ -93,4 +93,3 @@ function resetGame() {
     updateHangmanDrawing();
     document.getElementById('user-input').disabled = false;
 }
-
